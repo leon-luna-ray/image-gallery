@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ProgressBar from './ProgressBar';
 
 // The upload form may not be needed if uploading directly since there shouldn't be a need for authentication
 const UploadForm = () => {
@@ -28,6 +29,7 @@ const UploadForm = () => {
         <div className='output'>
           {error && <div className='error'>{error}</div>}
           {file && <div className='file'>{file.name}</div>}
+          {file && <ProgressBar />}
         </div>
       </form>
     </div>
