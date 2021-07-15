@@ -27,9 +27,10 @@ const UploadForm = () => {
       <form>
         <input type='file' onChange={handleChange} />
         <div className='output'>
+          {/* if the right side is true it will then output what is after the && */}
           {error && <div className='error'>{error}</div>}
           {file && <div className='file'>{file.name}</div>}
-          {file && <ProgressBar />}
+          {file && <ProgressBar file={file} setFile={setFile} />}
         </div>
       </form>
     </div>
