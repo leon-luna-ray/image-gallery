@@ -8,7 +8,12 @@ const ImageGrid = () => {
 
   return (
     <div className='image-grid'>
-      <h1>Grid</h1>
+      {docs &&
+        docs.map((doc) => (
+          <div className='img-wrap' key={doc.id}>
+            <h1>{doc.url}</h1>
+          </div>
+        ))}
     </div>
   );
 };
