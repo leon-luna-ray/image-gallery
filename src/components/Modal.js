@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 // add functionality to update alt text with user description
 const Modal = ({ selectedImg, setSelectedImg }) => {
@@ -9,9 +10,19 @@ const Modal = ({ selectedImg, setSelectedImg }) => {
     }
   };
   return (
-    <div className='backdrop' onClick={handleClick}>
-      <img src={selectedImg} alt='larger-img' />
-    </div>
+    <motion.div
+      className='backdrop'
+      onClick={handleClick}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+    >
+      <motion.img
+        src={selectedImg}
+        alt='larger-img'
+        initial={{ y: '-100vh' }}
+        animate={{ y: 0 }}
+      />
+    </motion.div>
   );
 };
 

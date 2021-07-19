@@ -20,7 +20,15 @@ const ImageGrid = ({ setSelectedImg }) => {
             whileHover={{ opacity: 0.8 }}
             onClick={() => setSelectedImg(doc.url)}
           >
-            <img src={doc.url} alt='img' />
+            <motion.img
+              src={doc.url}
+              // add functionality to get alt from user description
+              alt='img'
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              // add slight delay before loading image
+              transition={{ delay: 0.5 }}
+            />
           </motion.div>
         ))}
     </div>
