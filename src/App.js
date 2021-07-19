@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Title from './components/Title';
-import UploadForm from './components/UploadForm';
+// upload form to be added later as a private route
+// import UploadForm from './components/UploadForm';
 import ImageGrid from './components/ImageGrid';
+import Modal from './components/Modal';
 
 function App() {
+  const [selectedImg, setSelectedImg] = useState(null);
+
   return (
     <div className='App'>
       <Title />
-      {/* upload form to be added later as a autenticated private route */}
-      {/* <UploadForm /> */}
-      <ImageGrid />
+      <ImageGrid setSelectedImg={setSelectedImg} />
+      <Modal selectedImg={selectedImg} />
     </div>
   );
 }
