@@ -7,7 +7,8 @@ function App() {
   return (
     <div className='App'>
       <Title />
-      <UploadForm />
+      {/* upload form to be added later as a autenticated private route */}
+      {/* <UploadForm /> */}
       <ImageGrid />
     </div>
   );
