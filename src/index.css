@@ -46,10 +46,22 @@ body {
   grid-gap: 40px;
 }
 
-.img-wrap {
+/* need to fix the styling later to make squares */
+.img-square {
   overflow: hidden;
   height: 0;
-  /* padding is what makes it square */
+  padding: 50% 0;
+}
+
+.img-square img {
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 150%;
+}
+
+/* .img-wrap {
+  overflow: hidden;
+  height: 0;
   padding: 50% 0;
   position: relative;
   opacity: 0.8%;
@@ -59,9 +71,9 @@ body {
   min-width: 100%;
   min-height: 100%;
   max-width: 150%;
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
-}
+} */
 
 /* modal styles */

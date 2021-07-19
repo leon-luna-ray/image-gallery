@@ -10,7 +10,7 @@ const ImageGrid = () => {
     <div className='img-grid'>
       {docs &&
         docs.map((doc) => (
-          <div className='' key={doc.id}>
+          <div className='img-square' key={doc.id}>
             <img src={doc.url} alt='img' />
           </div>
         ))}
