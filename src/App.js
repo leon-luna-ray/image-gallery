@@ -4,7 +4,7 @@ import Title from './components/Title';
 import UploadForm from './components/UploadForm';
 import ImageGrid from './components/ImageGrid';
 import Modal from './components/Modal';
-// import GetStorage from './components/GetStorage';
+import GetStorage from './components/GetStorage';
 
 function App() {
   // state for modal display img onClick
@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className='App'>
-      {/* <GetStorage /> */}
+      <GetStorage />
       <Title />
       <UploadForm />
       {/* pass state from ImageGrid to Modal */}

@@ -1,17 +1,18 @@
-import React, { useState, useEffect } from 'react';
-import { projectStorage } from '../firebase/config';
+// import React from 'react';
+// import { getStorage, ref } from 'firebase/storage';
 
-const GetStorage = (file) => {
-  // state for image urls
-  // const [images, setImages] = useState(null);
+// const GetStorage = () => {
+//   const storage = getStorage();
+//   const storageRef = ref(storage);
+//   const imagesRef = storageRef.child('images');
 
-  // Get a reference to the storage service, which is used to create references in your storage bucket
+//   console.log(imagesRef);
 
-  // Create a storage reference from our storage service
-  const storageRef = projectStorage.ref();
-  console.log(storageRef);
+//   return (
+//     <div>
+//       <h1>Hello World</h1>
+//     </div>
+//   );
+// };
 
-  return <h1>storage test</h1>;
-};
-
-export default GetStorage;
+// export default GetStorage;

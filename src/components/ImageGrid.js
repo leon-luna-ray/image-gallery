@@ -4,9 +4,7 @@ import { motion } from 'framer-motion';
 
 const ImageGrid = ({ setSelectedImg }) => {
   // Listen to the collection in the database and return it on snap from the custom hook
-
   const { docs } = useFirestore('images');
-  console.log(docs);
 
   return (
     <div className='img-grid'>

@@ -1,13 +1,16 @@
-// import { useState, useEffect } from 'react';
-import { projectStorage } from '../firebase/config';
+// // import { useState, useEffect } from 'react';
+// import { projectStorage } from '../firebase/config';
 
-const getStorage = () => {
-  const storageRef = projectStorage.ref();
-  storageRef.get().on('load', (files) => {
-    files.forEach((file) => {
-      console.log(file);
-    });
-  });
-};
+// const getStorage = () => {
+//   // working of docs to ge the images from the storage ref
+//   const storageRef = projectStorage.ref();
+//   const imagesRef = storageRef.child('images');
 
-export default getStorage;
+//   imagesRef.forEach((image) => {
+//     const url = image.url;
+//   });
+
+//   return { url };
+// };
+
+// export default getStorage;
