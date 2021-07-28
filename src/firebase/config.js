@@ -1,7 +1,8 @@
 // import * as firebase from 'firebase/app';
 import firebase from 'firebase/app';
-import 'firebase/storage';
+import 'firebase/auth';
 import 'firebase/firestore';
+import 'firebase/storage';
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -15,11 +16,11 @@ const firebaseConfig = {
 };
 
 // initialize firebase
-firebase.initializeApp(firebaseConfig);
+const app = firebase.initializeApp(firebaseConfig);
 // make sure to change storage rules to only allow authenticated users when changing to production
 // this process is used to interact with the backend storage
 const projectStorage = firebase.storage();
 const projectFirestore = firebase.firestore();
 const timestamp = firebase.firestore.FieldValue.serverTimestamp;
 
-export { projectStorage, projectFirestore, timestamp };
+export { app, projectStorage, projectFirestore, timestamp };
