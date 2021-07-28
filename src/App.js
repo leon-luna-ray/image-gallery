@@ -4,7 +4,6 @@ import Title from './components/Title';
 import UploadForm from './components/UploadForm';
 import ImageGrid from './components/ImageGrid';
 import Modal from './components/Modal';
-import GetStorage from './components/GetStorage';
 
 // Axios code
 // New process will use axios to get storage data, can then use that hopefully to destructure and get image URLs and other metadata?
@@ -20,7 +19,6 @@ function App() {
 
   return (
     <div className='App'>
-      <GetStorage />
       <Title />
       <UploadForm />
       {/* pass state from ImageGrid to Modal */}
