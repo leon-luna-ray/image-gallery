@@ -1,34 +1,33 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import images from '../images/images';
+import { Container, Col, Row } from 'react-bootstrap';
 
-const ImageGrid = ({ setSelectedImg }) => {
-  // Temporary file for manually adding the photos. Future functionality to allow to add photos directly from the authenticated part of the app.
-  const galleryImages = images;
+const ImageGrid = ({ data }) => {
+  // Map data array and return formatted image (map must always return back into the new array it creates)
+  const renderImages = data.map((image, index) => {
+    return (
+      <Col key={index}>
+        {image} {index + 1}
+      </Col>
+    );
+  });
 
-  return (
-    <div className='img-grid'>
-      {galleryImages.map((img) => (
-        <motion.div
-          className='img-square'
-          key={img.id}
-          // change the opacity on hover with animation
-          whileHover={{ opacity: 0.8 }}
-          onClick={() => setSelectedImg(img.url)}
-        >
-          <motion.img
-            src={img.url}
-            // add alt tags in the images file
-            alt='img'
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            // add slight delay before loading image
-            transition={{ delay: 0.5 }}
-          />
-        </motion.div>
-      ))}
-    </div>
-  );
+  // Method takes an array and will return rows with in groups of 3
+  const renderRows = (images) => {
+    // Regrouped items pushed to this array
+    const rows = [];
+    // Loop through the array and arrange in groups of 3
+    while (images.length) {
+      rows.push(images.splice(0, 3));
+    }
+    // When the loop is complete map each group to create a new row
+    const renderedRows = rows.map((row, index) => {
+      return <Row key={index}>{row}</Row>;
+    });
+
+    return renderedRows;
+  };
+
+  return <Container>{renderRows(renderImages)}</Container>;
 };
 
 export default ImageGrid;

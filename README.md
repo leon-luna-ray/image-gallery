@@ -2,9 +2,9 @@
 
 ## Description
 
-Image gallery app for my personal photography portfolio. This version is the MVP displaying a grid of images. The use can click each image to display a modal for full-size viewing.
-
 🚧 Currently in development.
+
+Image gallery app for my personal photography portfolio. This version is the MVP displaying a grid of images. The use can click each image to display a modal for full-size viewing.
 
 [Launch 🚀](http://www.raylunaphoto.com)
 
