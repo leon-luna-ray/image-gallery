@@ -4,8 +4,9 @@ import DarkModeBtn from './DarkModeBtn';
 const Header = () => {
   return (
     <header>
-      <DarkModeBtn id='dark-mode-btn' />
-
+      <div className='d-flex justify-content-end' fluid>
+        <DarkModeBtn id='dark-mode-btn' />
+      </div>
       <h1 className='site-title'>Ray Luna</h1>
     </header>
   );
