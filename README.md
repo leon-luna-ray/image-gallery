@@ -2,11 +2,7 @@
 
 ## Description
 
-🚧 Currently in development.
-
-Image gallery app for my personal photography portfolio. This version is the MVP displaying a grid of images. The use can click each image to display a modal for full-size viewing.
-
-[Launch 🚀](http://www.raylunaphoto.com)
+This is the repository for my photography portfolio.
 
 ## Table of Contents
 
@@ -20,29 +16,24 @@ Image gallery app for my personal photography portfolio. This version is the MVP
 
 ## Image
 
-![Screenshot](./public/assets/image-gallery.png)
+![Screenshot](./assets/image-gallery.png)
 
 ## Technologies
 
+- HTML
+- CSS
 - Javascript
 - React.js
-- Node.js
-- CSS
-- HTML
-- Firebase
+- Bootstrap
+- Google Fonts
 
 ## Known-Bugs
 
-- Grid should display images in a centered format.
-- CSS styling issues ongoing.
+Issues with styling and responsiveness.
 
 ## Next-Steps
 
-- Navigation
-- Contact section
-- About section
-- Image download
-- Authentication
+Styling updates Large preview Modals
 
 ## License
 
@@ -60,6 +51,6 @@ If you have any questions about the repo, open an issue or contact me directly a
 
 ## Links
 
-- [Deployed Project](http://www.raylunaphoto.com)
+- [Deployed Project](https://leon-luna-ray.github.io/image-gallery/)
 
 - [Project Repository](https://github.com/leon-luna-ray/image-gallery)
