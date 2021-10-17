@@ -1,3 +1,9 @@
+.site-title {
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  font-size: 6rem;
+}
+
 .grid-img {
   margin: 2rem;
 }
