@@ -1,21 +1,20 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
 import useDarkMode from '../hooks/useDarkMode';
-import '../styles/body.css';
 
 const DarkModeComponent = () => {
   const [darkMode, setDarkMode] = useDarkMode();
 
   return (
-    <button
+    <Button
       onClick={() => setDarkMode((prevDarkMode) => !prevDarkMode)}
       style={{
-        border: `1px solid ${darkMode ? 'white' : 'black'}`,
-        background: 'none',
+        background: darkMode ? '#333' : '#fff',
         color: darkMode ? 'white' : 'black',
       }}
     >
-      Toggle Dark Mode
-    </button>
+      {darkMode ? '⬜️    Light' : '⬛️    Dark'}
+    </Button>
   );
 };
 

@@ -1,3 +1,8 @@
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
 .site-title {
   font-family: 'Amatic SC', cursive;
   text-align: center;
