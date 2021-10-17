@@ -3,12 +3,29 @@ body.dark-mode {
   color: #fff;
 }
 
+body {
+  font-family: 'Amatic SC', cursive;
+}
+
 .site-title {
   font-family: 'Amatic SC', cursive;
   text-align: center;
   font-size: 6rem;
 }
 
+.img-row {
+  margin-top: 3rem;
+}
+
+.img-caption {
+  font-size: 2rem;
+}
+.grid-img-div {
+  margin: 1.2rem;
+}
+
 .grid-img {
-  margin: 2rem;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
 }

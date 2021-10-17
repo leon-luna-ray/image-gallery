@@ -6,14 +6,20 @@ const ImageGrid = ({ images }) => {
   const renderImages = images.map((image, index) => {
     return (
       <Col key={index}>
-        <div className='grid-img'>
-          <Image src={image.url} alt={image.alt} rounded fluid />
-          {image.title}
+        <div className='grid-img-div'>
+          <Image
+            className='grid-img'
+            src={image.url}
+            alt={image.alt}
+            thumbnail
+            fluid
+          />
         </div>
+
+        <p className='img-caption text-capitalize'>{image.title}</p>
       </Col>
     );
   });
-
   // Method takes an array and will return rows with in groups of 3
   const renderRows = (images) => {
     // Regrouped items pushed to this array
@@ -24,7 +30,11 @@ const ImageGrid = ({ images }) => {
     }
     // When the loop is complete map each group to create a new row
     const renderedRows = rows.map((row, index) => {
-      return <Row key={index}>{row}</Row>;
+      return (
+        <Row className='img-row' key={index}>
+          {row}
+        </Row>
+      );
     });
 
     return renderedRows;
