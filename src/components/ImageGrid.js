@@ -1,13 +1,14 @@
 import React from 'react';
-import { Container, Col, Row } from 'react-bootstrap';
+import { Container, Col, Row, Image } from 'react-bootstrap';
 
-const ImageGrid = ({ data }) => {
-  // Map data array and return formatted image (map must always return back into the new array it creates)
-  const renderImages = data.map((image, index) => {
+const ImageGrid = ({ images }) => {
+  // Map images array and return formatted image (map must always return back into the new array it creates)
+  const renderImages = images.map((image, index) => {
     return (
       <Col key={index}>
         <div className='grid-img'>
-          {image} {index + 1}
+          <Image src={image.url} alt={image.alt} rounded fluid />
+          {image.title}
         </div>
       </Col>
     );
