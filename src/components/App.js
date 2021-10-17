@@ -1,5 +1,6 @@
 import React from 'react';
 import ImageGrid from './ImageGrid';
+import '../styles/App.css';
 
 const App = () => {
   const data = [

@@ -6,7 +6,9 @@ const ImageGrid = ({ data }) => {
   const renderImages = data.map((image, index) => {
     return (
       <Col key={index}>
-        {image} {index + 1}
+        <div className='grid-img'>
+          {image} {index + 1}
+        </div>
       </Col>
     );
   });
@@ -27,7 +29,9 @@ const ImageGrid = ({ data }) => {
     return renderedRows;
   };
 
-  return <Container>{renderRows(renderImages)}</Container>;
+  return (
+    <Container className='text-center'>{renderRows(renderImages)}</Container>
+  );
 };
 
 export default ImageGrid;
