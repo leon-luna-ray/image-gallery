@@ -3,6 +3,7 @@
 ## Description
 
 This is the repository for my photography portfolio.
+Current intermittent issues with gh pages deployment on custom domain.
 
 [🚀 Launch](https://leon-luna-ray.github.io/image-gallery/)
 
@@ -31,11 +32,14 @@ This is the repository for my photography portfolio.
 
 ## Known-Bugs
 
-Issues with styling and responsiveness.
+- Problems with deployment still ongoing
 
 ## Next-Steps
 
-Styling updates Large preview Modals
+- Preview Modals
+- Make each image its own story with multiple images on click
+- Download full resolution
+- Private sharing with full set download capability
 
 ## License
 

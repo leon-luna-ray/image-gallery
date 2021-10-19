@@ -6,15 +6,16 @@ const DarkModeComponent = () => {
   const [darkMode, setDarkMode] = useDarkMode();
 
   return (
-    <Button
+    <div
+      className='dark-mode-btn'
       onClick={() => setDarkMode((prevDarkMode) => !prevDarkMode)}
       style={{
         background: darkMode ? '#333' : '#fff',
         color: darkMode ? 'white' : 'black',
       }}
     >
-      {darkMode ? '⬜️    Light' : '⬛️    Dark'}
-    </Button>
+      {darkMode ? 'Light ⬜️' : 'Dark ⬛️'}
+    </div>
   );
 };
 

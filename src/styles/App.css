@@ -4,7 +4,7 @@ body.dark-mode {
 }
 
 body {
-  font-family: 'Amatic SC', cursive;
+  /* font-family: 'Amatic SC', cursive; */
 }
 
 .site-title {
@@ -13,12 +13,21 @@ body {
   font-size: 6rem;
 }
 
+.dark-mode-btn {
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+.dark-mode-btn:hover {
+  cursor: pointer;
+}
+
 .img-row {
   margin-top: 3rem;
 }
 
 .img-caption {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 .grid-img-div {
   margin: 1.2rem;
