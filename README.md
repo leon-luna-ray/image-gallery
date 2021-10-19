@@ -3,9 +3,8 @@
 ## Description
 
 This is the repository for my photography portfolio.
-Current intermittent issues with gh pages deployment on custom domain.
 
-[🚀 Launch](https://leon-luna-ray.github.io/image-gallery/)
+[www.rayluna.photos](https://www.rayluna.photos)
 
 ## Table of Contents
 

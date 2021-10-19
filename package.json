@@ -2,7 +2,7 @@
   "name": "image-gallery",
   "version": "2.0.0",
   "private": true,
-  "homepage": "https://leon-luna-ray.github.io/image-gallery/",
+  "homepage": "https://leon-luna-ray.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
