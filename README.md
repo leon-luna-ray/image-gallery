@@ -4,7 +4,7 @@
 
 This is the repository for my photography portfolio.
 
-[www.rayluna.photos](https://www.rayluna.photos)
+[www.rayluna.photography](https://www.rayluna.photography)
 
 ## Table of Contents
 
@@ -31,7 +31,7 @@ This is the repository for my photography portfolio.
 
 ## Known-Bugs
 
-- Problems with deployment still ongoing
+- Slow loading times
 
 ## Next-Steps
 
