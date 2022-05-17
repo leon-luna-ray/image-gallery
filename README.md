@@ -26,6 +26,7 @@ This is the repository for my photography portfolio.
 - CSS
 - Javascript
 - React.js
+- Contentful
 - Bootstrap
 - Google Fonts
 
