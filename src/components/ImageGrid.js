@@ -1,23 +1,19 @@
 import React from 'react';
 import { Container, Col, Row, Image } from 'react-bootstrap';
 
-const ImageGrid = ({ images, posts }) => {
-  // Map images array and return formatted image (map must always return back into the new array it creates)
+const ImageGrid = ({ posts }) => {
   console.log(posts);
-  // console.log(images);
 
   const renderPosts = posts.map((post, index) => {
-    const { hero_image, title, meta } = post;
+    const { image, title, meta } = post;
     // TODO change this later for production
-    const imgUrl = `https://localhost:8000${hero_image.meta.download_url}`
-    console.log(post)
+    const imgUrl = `http://localhost:8000${image.url}`
     return (
       <Col key={index} md={6} xl={4}>
         <div className='grid-img-div'>
           <Image
             className='grid-img'
-            src={hero_image.meta.detail_url}
-            // alt={image.alt}
+            src={imgUrl}
             thumbnail
             fluid
           />

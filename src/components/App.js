@@ -1,5 +1,4 @@
 import React from 'react';
-// import { client } from '../client';
 import axios from 'axios';
 import Header from './Header';
 import ImageGrid from './ImageGrid';
@@ -13,10 +12,9 @@ class App extends React.Component {
 
   async componentDidMount() {
     try {
-      // GET HOME PAGE DATA
       const userPosts = await axios.get(
         // TODO: Set the base api url to state or way to easily change the search
-        'http://localhost:8000/api/v2/pages/?type=home.GalleryPost&fields=hero_image,body'
+        'http://localhost:8000/api/v2/pages/?type=home.GalleryPost&fields=image,body'
       );
       // TODO verify if this will work later on
       if (userPosts.status === 200) {

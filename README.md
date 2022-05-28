@@ -2,7 +2,7 @@
 
 ## Description
 
-This is the repository for my photography portfolio.
+This is the repository for the frontend of my photography portfolio app.
 
 [www.rayluna.photography](https://www.rayluna.photography)
 
@@ -26,7 +26,6 @@ This is the repository for my photography portfolio.
 - CSS
 - Javascript
 - React.js
-- Contentful
 - Bootstrap
 - Google Fonts
 
